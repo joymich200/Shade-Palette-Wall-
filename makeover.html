@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Makeover: Before and After</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f0e6; /* Warm beige background */
+      color: #222;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 30px 40px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+
+    h1 {
+      color: #B22222; /* Brand red */
+      margin-bottom: 10px;
+    }
+
+    .date {
+      color: #888;
+      font-size: 0.9rem;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #B22222; /* Brand red for subheadings */
+      margin-top: 30px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .final-thoughts {
+      font-style: italic;
+      background-color: #ffe8e6; /* light red tint */
+      border-left: 4px solid #B22222;
+      padding: 15px 20px;
+      margin-top: 40px;
+      border-radius: 6px;
+      color: #660000;
+    }
+
+    a.call-to-action {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #B22222;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    a.call-to-action:hover {
+      background-color: #7a1a1a;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+        margin: 20px;
+      }
+    }
+    /* Share & tags */
+    .meta{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;font-size:.85rem;color:#666;margin-top:2rem;gap:1rem;}
+    .tags a{background:#ececec;border-radius:20px;padding:.25rem .9rem;margin-right:.4rem;color:#555;font-size:.8rem;}
+
+    /* Author */
+    .author{display:flex;align-items:center;margin-top:3rem;border-top:1px solid #ddd;padding-top:1.5rem;}
+    .author img{width:80px;height:80px;border-radius:50%;margin-right:1rem;}
+    .author h4{font-size:1.1rem;margin-bottom:.25rem;}
+
+    /* Related */
+    .related{margin-top:3.5rem;}
+    .related h3{font-size:1.5rem;margin-bottom:1.5rem;font-weight:700;}
+    .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.2rem;}
+    .related-card{background:#fff;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.05);padding:1rem;display:flex;align-items:center;gap:.9rem;transition:transform .25s,box-shadow .25s;}
+    .related-card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.08);} 
+
+.hero{position:relative;height:350px;overflow:hidden;}
+    .hero img{object-fit:cover;width:100%;height:100%;filter:brightness(.6);} 
+    .hero-content{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;color:#fff;padding:0 1rem;}
+    .hero h1{font-size:2.5rem;font-weight:800;margin-bottom:.6rem;}
+    .hero p{font-size:.9rem;opacity:.9;}
+  </style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <!--Navbar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <img src="images/IMG-20250115-WA0021.jpg" class="logo" alt="logo">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Find a colour
+            </a>
+            <ul class="dropdown-menu">
+              
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="neutrals.html">Neutrals</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="greys.html">Greys</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="blues.html">Blues</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="greens.html">Greens</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="glow up.html">Shade Pallete & Wall Colour of the Year 2025 | Glow Up</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="reds.html">Reds</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="yellows.html">Yellows</a></li>
+            </ul>
+
+            <li class="nav-item">
+          <a class="nav-link" href="order.html">Order Now</a>
+        </li>
+
+        <!-- WhatsApp link -->
+    <li class="nav-item">
+      <a class="nav-link" href="https://wa.me/2348164414100" target="_blank">
+        <img src="images/1753105325782.jpg" alt="WhatsApp" style="margin-right: 5px; height: 30px; width: 50px;">
+        Chat on WhatsApp
+      </a>
+    </li>
+  
+    </div>
+  </div>
+</nav>
+
+<!--Hero-->
+<section class="hero">
+    <img src="images/1748603471417.jpg" alt="Colorful modern interior">
+    <div class="hero-content">
+      <h1>Before &amp; After: Living Room Makeover</h1>
+      <p>By Paul Olagbeiro · May 10, 2025</p>
+    </div>
+  </section>
+
+  <article class="container">
+    <h1>Makeover: Before and After – Transform Your Space with Style</h1>
+    <p class="date">May 30, 2025</p>
+
+    <p>There’s nothing quite as satisfying as seeing a dramatic transformation unfold right before your eyes. Whether it’s a tired living room, a dull bedroom, or an outdated kitchen, a well-planned makeover can completely refresh your space, boost your mood, and add value to your home.</p>
+
+    <p>In this post, we’ll explore the power of a good makeover — highlighting what goes into it and why the “before and after” story matters so much in interior decor.</p>
+
+    <h2>Why Before and After Photos Matter</h2>
+    <p>Before and after photos are more than just snapshots — they tell a story of transformation, creativity, and hard work. They help you:</p>
+    <ul>
+      <li>Visualize the possibilities in your own space.</li>
+      <li>Inspire you with real examples of what’s achievable.</li>
+      <li>Showcase the impact of professional painting and interior decor services.</li>
+    </ul>
+
+    <h2>The Key Elements of a Successful Makeover</h2>
+
+    <h3>1. Planning &amp; Vision</h3>
+    <p>A successful makeover starts with a clear vision. Consider:</p>
+    <ul>
+      <li>What mood or style do you want? (Modern, cozy, minimalist, vibrant?)</li>
+      <li>What colors speak to you and complement your space?</li>
+      <li>How will you use the space differently after the makeover?</li>
+    </ul>
+
+    <h3>2. Preparation</h3>
+    <p>Good prep work is the foundation:</p>
+    <ul>
+      <li>Clear the room of furniture and decor.</li>
+      <li>Repair any wall damage.</li>
+      <li>Choose quality materials and tools.</li>
+    </ul>
+
+    <h3>3. Painting &amp; Decorating</h3>
+    <p>This is where the magic happens:</p>
+    <ul>
+      <li>Selecting the right paint color(s) to set the tone.</li>
+      <li>Applying fresh coats carefully for a flawless finish.</li>
+      <li>Adding accent walls, patterns, or textures for personality.</li>
+    </ul>
+
+    <h3>4. Furnishing &amp; Styling</h3>
+    <p>Finishing touches bring it all together:</p>
+    <ul>
+      <li>New or rearranged furniture to maximize space and function.</li>
+      <li>Thoughtful decor like rugs, cushions, and artwork.</li>
+      <li>Lighting that enhances the new ambiance.</li>
+    </ul>
+
+    <h2>Real-Life Makeover Example</h2>
+    <p><strong>Before:</strong> A dull, beige living room with faded walls and mismatched furniture.</p>
+    <p><strong>After:</strong> Walls painted in a warm beige with a feature wall in deep red, modern black furniture pieces, and stylish red and beige accents throughout — creating a cozy yet sophisticated vibe.</p>
+
+    <h2>Tips for Your Own Makeover</h2>
+    <ul>
+      <li>Start small: Try one room or even one wall.</li>
+      <li>Test paint samples before committing.</li>
+      <li>Use before and after photos to track your progress.</li>
+      <li>Don’t be afraid to mix textures and colors.</li>
+      <li>Consider professional help for tricky jobs.</li>
+    </ul>
+
+    <div class="final-thoughts">
+      <p>A makeover is more than just changing colors or moving furniture — it’s about reimagining your space to reflect your style and needs. With the right approach, you can achieve stunning before-and-after results that breathe new life into your home.</p>
+    </div>
+
+    <a href="https://wa.me/08164414100" class="call-to-action">Ready to Transform Your Space? Contact Us Today!</a>
+  </article>
+
+  <!-- Share & Tags -->
+      <div class="meta">
+        <div class="share">Share:
+          <a href="https://www.facebook.com/share/1Yz6Rk3rxU/" title="Share on Facebook">Facebook</a> |
+          <a href="https://www.instagram.com/lovecares4usince?igsh=MWtoOXB4b2xjZ2pnZw==" title="Share on Instagram">Instagram</a>         </div>
+      </div>
+
+      <!-- Author -->
+      <div class="author">
+        <img src="images/IMG-20250218-WA0002.jpg" alt="Author Paul Olagbeiro">
+        <div>
+          <h4>Paul Olagbeiro</h4>
+          <p>Staff at Shade Palette & Wall with 7 years of ideas and innovation.</p>
+        </div>
+      </div>
+
+      <!-- Related Posts -->
+      <div class="related">
+        <h3>You Might Also Like</h3>
+        <div class="related-grid">
+          <!-- Card 1 -->
+          <a href="trends 2025.html" class="related-card">
+            <img src="images/1747784712579.jpg" style="width: 300px;" alt="DIY Tips">
+            <div>
+              <h4>Top Interior Color Trends for 2025</h4>
+              <p style="font-size:.7rem;color:#777;">May 25, 2025</p>
+            </div>
+          </a>
+          <!-- Card 2 -->
+          <a href="DIY.html" class="related-card">
+            <img src="images/1747787390042.jpg" style="width: 300px;" alt="Living Room Makeover">
+            <div>
+              <h4>DIY Wall Painting Tips</h4>
+              <p style="font-size:.7rem;color:#777;">May 18, 2025</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </article>
+
+
+
+
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <h3>Shade Pallete & Wall</h3>
+      <p>We offer premium painting, cleaning, and interior solutions tailored to your needs. Quality, reliability, and professionalism guaranteed.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="trends 2025.html">Trending Colours</a></li>
+        <li><a href="order.html">Order Now</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: Shadepalette.nig@gmail.com</p>
+      <p>Phone: +234 8164414100</p>
+      <p>Address: 17 Ogudu Road Ojota, Lagos, Nigeria</p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/1Yz6Rk3rxU/"><i class="bi bi-facebook"></i></a>
+
+        <a href="https://www.instagram.com/lovecares4usince?igsh=MWtoOXB4b2xjZ2pnZw=="><i class="bi bi-instagram"></i></a>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Shade Palette & Wall. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Scroll To Top Button -->
+<button id="scrollToTopBtn" title="Go to top">↑</button>
+
+<script>
+  // Show button after scrolling 300px
+  const scrollBtn = document.getElementById("scrollToTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  };
+
+  // Scroll to top when clicked
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

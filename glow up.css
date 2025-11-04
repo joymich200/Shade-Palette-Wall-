@@ -1,0 +1,20 @@
+.box{
+text-align: center;
+height: 300px;
+width: 1000px;
+background-color: #D2042D;
+border-radius: 30px;
+margin: 0 auto;
+
+}
+    .hover-underline {
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      font-weight: 10px;
+      margin-right: 800px;
+    text-align:right;
+    }
+
+    .hover-underline:hover {
+      text-decoration: underline;
+    }

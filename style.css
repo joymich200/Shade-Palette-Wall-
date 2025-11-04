@@ -1,0 +1,851 @@
+.navbar {
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+   z-index: 1000;  
+}
+.nav-link{
+color:#1C1C1C;
+text-decoration: none;
+ 
+}
+.nav-link:hover{
+  color: #95A5A6;
+}
+
+.logo{
+    width: 50px;
+    height: 50px; /*Maintain aspect ratio*/
+    display: block;
+    position: static;
+    top: 10px;
+    }
+    /*Hero Section*/
+    .hero{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 70px;
+    }
+    .hero-btn{ 
+        background-color: crimson;
+      color: gainsboro;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bolder;
+      margin-left: 50px;
+      
+      }
+      .hero-btn:hover{
+        background-color: #ff8177;
+        color: white;}
+        .hero-img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* maintains aspect ratio and fills */
+          z-index: -1;
+        }
+        .hero-content{
+          color: white;
+          text-align: center;
+          padding: 1 rem;
+        }
+.card{
+border-radius: 40px;
+
+}
+
+.footer {
+  background-color: gray;
+  color: #fff;
+  padding: 40px 0 20px;
+  font-size: 0.9rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer h3, .footer h4 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer p {
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* makes icons white */
+}
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 100;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #222;
+}
+.c1{
+  background-color:
+    #F5F5F5;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c1:hover {
+      transform: scale(1.1);
+    }
+
+    .c2{
+  background-color:
+    #D6CDC4;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c2:hover {
+      transform: scale(1.1);
+    }
+
+    .c3{
+  background-color:
+    #BFAEA0;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c3:hover {
+      transform: scale(1.1);
+    }
+
+     .c4{
+  background-color:
+    #4A4A4A;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c4:hover {
+      transform: scale(1.1);
+    }
+
+     .c5{
+  background-color:
+    #2B2B2B;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c5:hover {
+      transform: scale(1.1);
+    }
+
+     .c6{
+  background-color:
+    #EFE8DC;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c6:hover {
+      transform: scale(1.1);
+    }
+
+     .c7{
+  background-color:
+    #B0AFAF;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c7:hover {
+      transform: scale(1.1);
+    }
+
+     .c8{
+  background-color:
+    #CBBBA0;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c8:hover {
+      transform: scale(1.1);
+    }
+
+     .c9{
+  background-color:
+    #666666;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c9:hover {
+      transform: scale(1.1);
+    }
+
+
+     .c10{
+  background-color:
+    #E2D6C1;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c10:hover {
+      transform: scale(1.1);
+    }
+
+    .c11{
+  background-color:
+    #6B8E23;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c11:hover {
+      transform: scale(1.1);
+    }
+
+    .c12{
+  background-color:
+    #D96C3F;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c12:hover {
+      transform: scale(1.1);
+    }
+
+
+    .c13{
+  background-color:
+    #E6D3B3;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c13:hover {
+      transform: scale(1.1);
+    }
+
+
+    .c14{
+  background-color:
+    #C3D6C2;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c14:hover {
+      transform: scale(1.1);
+    }
+
+
+    .c15{
+  background-color:
+    #8B6B4F;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c15:hover {
+      transform: scale(1.1);
+    }
+
+
+    .c16{
+  background-color:
+    #9CAB7C;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c16:hover {
+      transform: scale(1.1);
+    }
+
+
+    .c17{
+  background-color:
+    #B8573D;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c17:hover {
+      transform: scale(1.1);
+    }
+
+
+    .c18{
+  background-color:
+    #F2E4C7;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c18:hover {
+      transform: scale(1.1);
+    }
+
+
+    .c19{
+  background-color:
+    #556B2F;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c19:hover {
+      transform: scale(1.1);
+    }
+
+
+    .c20{
+  background-color:
+    #A9987D;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c20:hover {
+      transform: scale(1.1);
+    }
+
+
+     .c21{
+  background-color:
+    #AEDFF7;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c21:hover {
+      transform: scale(1.1);
+    }
+
+
+     .c22{
+  background-color:
+    #A2D5C6;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c22:hover {
+      transform: scale(1.1);
+    }
+
+
+     .c23{
+  background-color:
+    #BDC3C7;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c23:hover {
+      transform: scale(1.1);
+    }
+
+
+     .c24{
+  background-color:
+    #F8F8F8;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c24:hover {
+      transform: scale(1.1);
+    }
+
+
+     .c25{
+  background-color:
+    #2C3E50;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c25:hover {
+      transform: scale(1.1);
+    }
+
+
+     .c26{
+  background-color:
+    #E8D8C3;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c26:hover {
+      transform: scale(1.1);
+    }
+
+
+     .c27{
+  background-color:
+    #C5E4E7;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c27:hover {
+      transform: scale(1.1);
+    }
+
+
+     .c28{
+  background-color:
+    #95A5A6;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c28:hover {
+      transform: scale(1.1);
+    }
+
+
+     .c29{
+  background-color:
+    #D3ECF3;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c29:hover {
+      transform: scale(1.1);
+    }
+
+
+     .c30{
+  background-color:
+    #F3EDE2;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c30:hover {
+      transform: scale(1.1);
+    }
+
+     .c31{
+  background-color:
+    #006D77;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c31:hover {
+      transform: scale(1.1);
+    }
+
+     .c32{
+  background-color:
+    #FFB703;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c32:hover {
+      transform: scale(1.1);
+    }
+
+     .c33{
+  background-color:
+    #FF5C5C;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c33:hover {
+      transform: scale(1.1);
+    }
+
+     .c34{
+  background-color:
+    #264653;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c34:hover {
+      transform: scale(1.1);
+    }
+
+     .c35{
+  background-color:
+    whitesmoke;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c35:hover {
+      transform: scale(1.1);
+    }
+
+     .c36{
+  background-color:
+    #FF784F;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c36:hover {
+      transform: scale(1.1);
+    }
+
+     .c37{
+  background-color:
+    #F4A300;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c37:hover {
+      transform: scale(1.1);
+    }
+
+     .c38{
+  background-color:
+    #DA4167;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c38:hover {
+      transform: scale(1.1);
+    }
+
+     .c39{
+  background-color:
+    #3B6BA5;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c39:hover {
+      transform: scale(1.1);
+    }
+
+     .c40{
+  background-color:
+    #1C1C1C;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c40:hover {
+      transform: scale(1.1);
+    }
+
+     .c41{
+  background-color:
+    #F9D5D3;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c41:hover {
+      transform: scale(1.1);
+    }
+
+     .c42{
+  background-color:
+    #D8A7B1;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c42:hover {
+      transform: scale(1.1);
+    }
+
+     .c43{
+  background-color:
+    #D2C1D8;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c43:hover {
+      transform: scale(1.1);
+    }
+
+     .c44{
+  background-color:
+    #FFF1E6;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c44:hover {
+      transform: scale(1.1);
+    }
+
+     .c45{
+  background-color:
+    #C4C4C4;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c45:hover {
+      transform: scale(1.1);
+    }
+
+     .c46{
+  background-color:
+    #DCE4F2;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c46:hover {
+      transform: scale(1.1);
+    }
+
+     .c47{
+  background-color:
+    #FADCD9;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c47:hover {
+      transform: scale(1.1);
+    }
+
+     .c48{
+  background-color:
+    #BCA0DC;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c48:hover {
+      transform: scale(1.1);
+    }
+     .c49{
+  background-color:
+    #F8E1D4;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c49:hover {
+      transform: scale(1.1);
+    }
+
+     .c50{
+  background-color:
+    #FFE4E1;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+  position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .c50:hover {
+      transform: scale(1.1);
+    }

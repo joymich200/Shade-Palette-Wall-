@@ -1,0 +1,88 @@
+ body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .color-grid {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .color-box {
+      width: 60px;
+      height: 60px;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 2px solid #ccc;
+    }
+
+    .roomset {
+      margin-top: 30px;
+      display: none;
+position: relative;
+      max-width: 500px;
+    }
+
+    .roomset img {
+         width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .carousel-controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .carousel-controls button {
+      background: rgba(255,255,255,0.8);
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background: #f9f9f9;
+    }
+
+    .color-item {
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .color-item:hover {
+     transform: scale(1.1);
+    }
+
+    .color-title {
+      background: #eee;
+      padding: 15px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+
+    .color-content {
+      display: none;
+      padding: 15px;
+      background: #fff;
+    }
+
+    .color-content img {
+     width: 200px;
+      height: 200px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+ }

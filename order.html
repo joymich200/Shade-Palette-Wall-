@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="images/IMG-20250115-WA0021.jpg">
+
+    <title>SHADEPALETTE&WALL</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+  <!--Navbar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <img src="images/IMG-20250115-WA0021.jpg" class="logo" alt="logo">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Find a colour
+            </a>
+            <ul class="dropdown-menu">
+              
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="neutrals.html">Neutrals</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="greys.html">Greys</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="blues.html">Blues</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="greens.html">Greens</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="glow up.html">Shade Pallete & Wall Colour of the Year 2025 | Glow Up</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="reds.html">Reds</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="yellows.html">Yellows</a></li>
+            </ul>
+
+            <li class="nav-item">
+          <a class="nav-link" href="order.html">Order Now</a>
+        </li>
+
+         <!-- WhatsApp link -->
+    <li class="nav-item">
+      <a class="nav-link" href="https://wa.me/2347039812009" target="_blank">
+        <img src="images/1753105325782.jpg" alt="WhatsApp" style="margin-right: 5px; height: 30px; width: 50px;">
+        Chat on WhatsApp
+      </a>
+    </li>
+
+    </div>
+  </div>
+</nav><br><br><br><br>
+
+<div class="container">
+  <h2>Paint Order Form</h2>
+
+  <form action="https://formspree.io/f/mzzgoqdd" method="POST">
+    <!-- Full Name -->
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+    <!-- Email -->
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+    <!-- Phone -->
+    <label for="phone">Phone Number *</label>
+    <input type="tel" id="phone" name="phone" required placeholder="e.g. +234XXXXXXXXXX">
+
+    <!-- Address -->
+    <label for="address">Full Address *</label>
+    <input type="text" id="address" name="address" required placeholder="Enter your delivery address">
+
+    <!-- Paint Quantity -->
+    <label for="quantity">Paint Quantity (Liters) *</label>
+    <input type="number" id="quantity" name="quantity" min="1" required placeholder="e.g. 5">
+
+    <!-- Paint Type -->
+    <label for="paint-type">Paint Type *</label>
+    <select id="paint-type" name="paint-type" required>
+      <option value="" disabled selected>Select paint type</option>
+      <option value="Satin">Satin</option>
+      <option value="Matt">Matte</option>
+      <option value="Emulsion">Emulsion</option>
+      <option value="Gloss">Gloss</option>
+      <option value="Silk">Silk</option>
+      <option value="Oil-Based">Oil-Based</option>
+      <option value="Water-Based">Water-Based/Epoxy</option>
+    </select>
+
+    <!-- Enquiry Type -->
+    <label for="enquiry">Enquiry Type *</label>
+    <select id="enquiry" name="enquiry" required>
+      <option value="" disabled selected>Select enquiry type</option>
+      <option value="Order">Order</option>
+      <option value="General Enquiry">General Enquiry</option>
+      <option value="Complaint">Complaint</option>
+      <option value="Others">Others</option>
+    </select>
+
+    <!-- Message -->
+    <label for="message">Message / Additional Details (Optional)</label>
+    <textarea id="message" name="message" placeholder="Enter any other information here..."></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit Order</button>
+  </form>
+</div>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <h3>Shade Pallete & Wall</h3>
+      <p>We offer premium painting, cleaning, and interior solutions tailored to your needs. Quality, reliability, and professionalism guaranteed.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="trends 2025.html">Trending Colours</a></li>
+        <li><a href="order.html">Order Now</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: Shadepalette.nig@gmail.com</p>
+      <p>Phone: +234 8164414100</p>
+      <p>Address: 17 Ogudu Road Ojota, Lagos, Nigeria</p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/1Yz6Rk3rxU/"><i class="bi bi-facebook"></i></a>
+
+        <a href="https://www.instagram.com/lovecares4usince?igsh=MWtoOXB4b2xjZ2pnZw=="><i class="bi bi-instagram"></i></a>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Shade Palette & Wall. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Scroll To Top Button -->
+<button id="scrollToTopBtn" title="Go to top">↑</button>
+
+<script>
+  // Show button after scrolling 300px
+  const scrollBtn = document.getElementById("scrollToTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  };
+
+  // Scroll to top when clicked
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
